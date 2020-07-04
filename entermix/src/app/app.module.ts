@@ -18,6 +18,8 @@ import { from } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { core } from '@angular/compiler';
 import {MatMenuModule} from '@angular/material/menu';
+import { TutorCardComponent } from './tutor-card/tutor-card.component';
+import { TutorPageComponent } from './tutor-page/tutor-page.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MixcompComponent,
     MixCardComponent,
     MenuPageLayoutComponent,
+    TutorCardComponent,
+    TutorPageComponent,
   ],
   imports: [
     BrowserModule,
