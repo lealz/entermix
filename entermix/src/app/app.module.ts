@@ -25,7 +25,7 @@ import { TutorPageComponent } from './tutor-page/tutor-page.component';
 import {MatIconModule} from '@angular/material/icon';
 import {LOCALE_ID } from '@angular/core';
 import {registerLocaleData} from '@angular/common';
-import locatePT from '@angular/common/locales/pt';
+import locatePT from '@angular/common/locales/pt'
 
 registerLocaleData(locatePT, 'pt-BR')
 
@@ -51,6 +51,7 @@ registerLocaleData(locatePT, 'pt-BR')
     CommonModule,
     MatMenuModule,
     MatIconModule,
+    HttpClientModule,
 
   ],
   providers: [{
