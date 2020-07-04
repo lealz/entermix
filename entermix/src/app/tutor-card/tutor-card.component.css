@@ -7,3 +7,12 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.info .price {
+  font-weight: bold;
+}
+
+.container{
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}

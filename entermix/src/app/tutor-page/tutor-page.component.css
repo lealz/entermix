@@ -1,9 +1,4 @@
-img {
-  max-width: 100%;
-}
-
-.info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+app-imovel-card{
+  margin: 5px;
+  display: block;
 }

@@ -1,12 +1,27 @@
 <mat-card>
-  <img [src]="photo">
+  <section class="container">
+    <img [src]="photo" />
 
-  <div class="info">
+    <!--<div class="info">
     <span>{{location}}</span>
     <span >{{name}}</span>
   </div>
   <div class="info">
-    <span>{{services}}</span>
+    <span>{{services }}</span>
     <span>{{zodiac}}</span>
-  </div>
+  </div>-->
+
+    <div class="item">
+      <span>{{ location }}</span>
+    </div>
+    <div class="item">
+      <span>{{ name }}</span>
+    </div>
+    <div class="item">
+      <span>{{ services }}</span>
+    </div>
+    <div class="item">
+      <span>{{ zodiac }}</span>
+    </div>
+  </section>
 </mat-card>
