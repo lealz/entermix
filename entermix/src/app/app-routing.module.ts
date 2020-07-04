@@ -7,6 +7,7 @@ import { TutorCardComponent} from './tutor-card/tutor-card.component'
 import { componentFactoryName } from '@angular/compiler';
 import { AboutUsComponent } from './about-us/about-us.component';
 import {ContatoComponent} from './contato/contato/contato.component'
+import { TutorPageComponent } from './tutor-page/tutor-page.component';
 
 const routes: Routes = [
 {
@@ -27,7 +28,7 @@ const routes: Routes = [
     },
     {
       path:'tutores',
-      component: TutorCardComponent
+      component: TutorPageComponent
     }
   ]
 }
