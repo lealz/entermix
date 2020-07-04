@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Component } from '@angular/core';
+<<<<<<< HEAD
+
+
+=======
 import { HttpClientModule } from '@angular/common/http';
+>>>>>>> 13addfa904eff6cefd0bdadaccd124883ddb97d4
 import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,8 +23,12 @@ import { from } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { core } from '@angular/compiler';
 import {MatMenuModule} from '@angular/material/menu';
+<<<<<<< HEAD
 import { TutorCardComponent } from './tutor-card/tutor-card.component';
 import { TutorPageComponent } from './tutor-page/tutor-page.component';
+=======
+import {MatIconModule} from '@angular/material/icon';
+>>>>>>> e1f7ac5cc17922f12684b76f9c6fcbebd851b44b
 
 
 @NgModule({
@@ -43,6 +52,7 @@ import { TutorPageComponent } from './tutor-page/tutor-page.component';
     MatListModule,
     CommonModule,
     MatMenuModule,
+    MatIconModule,
 
   ],
   providers: [],

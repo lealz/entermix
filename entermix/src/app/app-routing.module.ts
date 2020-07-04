@@ -15,10 +15,6 @@ const routes: Routes = [
   children: [
     {
       path:'',
-      component: MixcompComponent,
-    },
-    {
-      path:'',
       component: MixCardComponent
     },
     {
