@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { InterMixModelService } from 'src/app/services/inter-mix-model.service'
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-tutor-card',
@@ -15,6 +16,7 @@ export class TutorCardComponent implements OnChanges {
   photo: string;
   services: string;
   zodiac: string;
+  yoga: string;
 
   constructor() { }
 
@@ -29,5 +31,6 @@ export class TutorCardComponent implements OnChanges {
       this.zodiac = this.tutor.zodiac;
     }
   }
+
 
 }

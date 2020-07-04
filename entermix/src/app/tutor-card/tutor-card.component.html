@@ -1,6 +1,6 @@
 <mat-card>
   <section class="container">
-    <img [src]="photo" />
+    <a href="contato"><img [src]="photo" /></a>
 
     <!--<div class="info">
     <span>{{location}}</span>
@@ -12,16 +12,16 @@
   </div>-->
 
     <div class="item">
-      <span>{{ location }}</span>
+      <span>Local: {{ location }}</span>
     </div>
     <div class="item">
-      <span>{{ name }}</span>
+      <span>Tutor: {{ name }}</span>
+    </div>
+    <div class="item flex">
+      <span>Especialidades: {{ services }}</span>
     </div>
     <div class="item">
-      <span>{{ services }}</span>
-    </div>
-    <div class="item">
-      <span>{{ zodiac }}</span>
+      <span>Signo: {{ zodiac }}</span>
     </div>
   </section>
 </mat-card>
