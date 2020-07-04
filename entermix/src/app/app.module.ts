@@ -20,13 +20,14 @@ import { from } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { core } from '@angular/compiler';
 import {MatMenuModule} from '@angular/material/menu';
-<<<<<<< HEAD
 import { TutorCardComponent } from './tutor-card/tutor-card.component';
 import { TutorPageComponent } from './tutor-page/tutor-page.component';
-=======
 import {MatIconModule} from '@angular/material/icon';
->>>>>>> e1f7ac5cc17922f12684b76f9c6fcbebd851b44b
+import {LOCALE_ID } from '@angular/core';
+import {registerLocaleData} from '@angular/common';
+import locatePT from '@angular/common/locales/pt';
 
+registerLocaleData(locatePT, 'pt-BR')
 
 @NgModule({
   declarations: [
@@ -52,7 +53,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatIconModule,
 
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID, useValue: 'pt-BR'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
