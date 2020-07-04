@@ -25,7 +25,8 @@ import { TutorPageComponent } from './tutor-page/tutor-page.component';
 import {MatIconModule} from '@angular/material/icon';
 import {LOCALE_ID } from '@angular/core';
 import {registerLocaleData} from '@angular/common';
-import locatePT from '@angular/common/locales/pt'
+import locatePT from '@angular/common/locales/pt';
+import { PassaTemposComponent } from './passaTempos/passa-tempos/passa-tempos.component';
 
 registerLocaleData(locatePT, 'pt-BR')
 
@@ -38,6 +39,7 @@ registerLocaleData(locatePT, 'pt-BR')
     MenuPageLayoutComponent,
     TutorCardComponent,
     TutorPageComponent,
+    PassaTemposComponent
   ],
   imports: [
     BrowserModule,
