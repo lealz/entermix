@@ -20,7 +20,12 @@ import { from } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { core } from '@angular/compiler';
 import {MatMenuModule} from '@angular/material/menu';
+<<<<<<< HEAD
+import { TutorCardComponent } from './tutor-card/tutor-card.component';
+import { TutorPageComponent } from './tutor-page/tutor-page.component';
+=======
 import {MatIconModule} from '@angular/material/icon';
+>>>>>>> e1f7ac5cc17922f12684b76f9c6fcbebd851b44b
 
 
 @NgModule({
@@ -30,6 +35,8 @@ import {MatIconModule} from '@angular/material/icon';
     MixcompComponent,
     MixCardComponent,
     MenuPageLayoutComponent,
+    TutorCardComponent,
+    TutorPageComponent,
   ],
   imports: [
     BrowserModule,
