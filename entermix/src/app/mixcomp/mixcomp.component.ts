@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MixcompComponent implements OnInit {
 
-  titulo: string = "meu primeiro componente!";
-  dados: string;
 
   constructor() { }
 

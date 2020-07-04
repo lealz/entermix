@@ -1,36 +1,43 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { Component } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MixcompComponent } from './mixcomp/mixcomp.component';
-import { MenuPageLayoutComponent } from './mixcomp/menu-page-layout/menu-page-layout.component';
-import { LayoutModule } from '@angular/cdk/layout';
+import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+import { MixCardComponent } from './mixcomp/mix-card/mix-card.component';
+import { MenuPageLayoutComponent } from './mixcomp/menu-page-layout/menu-page-layout.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { from } from 'rxjs';
+import { CommonModule } from '@angular/common';
+import { core } from '@angular/compiler';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MixcompComponent,
-    MenuPageLayoutComponent
+    MixCardComponent,
+    MenuPageLayoutComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    LayoutModule,
+    MatCardModule,
     MatToolbarModule,
-    MatButtonModule,
     MatSidenavModule,
-    MatIconModule,
-    MatListModule
+    MatListModule,
+    CommonModule,
+    MatMenuModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
