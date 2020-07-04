@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Component } from '@angular/core';
 
+
 import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { from } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { core } from '@angular/compiler';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -39,6 +41,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatListModule,
     CommonModule,
     MatMenuModule,
+    MatIconModule,
 
   ],
   providers: [],
