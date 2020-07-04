@@ -47,6 +47,7 @@ import {MatIconModule} from '@angular/material/icon';
     CommonModule,
     MatMenuModule,
     MatIconModule,
+    HttpClientModule,
 
   ],
   providers: [],

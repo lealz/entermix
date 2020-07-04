@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { InterMixModelService } from 'src/app/services/inter-mix-model.service'
 import { InterMixServiceService } from 'src/app/services/inter-mix-service.service'
 
