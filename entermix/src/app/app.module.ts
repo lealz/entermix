@@ -27,6 +27,7 @@ import {LOCALE_ID } from '@angular/core';
 import {registerLocaleData} from '@angular/common';
 import locatePT from '@angular/common/locales/pt';
 import { PassaTemposComponent } from './passaTempos/passa-tempos/passa-tempos.component';
+import {MatButtonModule} from '@angular/material/button';
 
 registerLocaleData(locatePT, 'pt-BR')
 
@@ -54,6 +55,7 @@ registerLocaleData(locatePT, 'pt-BR')
     MatMenuModule,
     MatIconModule,
     HttpClientModule,
+    MatButtonModule,
 
   ],
   providers: [{

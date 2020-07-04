@@ -34,6 +34,10 @@ const routes: Routes = [
     {
       path:'passaTempos',
       component: PassaTemposComponent
+    },
+    {
+      path:'yoga',
+      component: TutorPageComponent
     }
   ]
 }

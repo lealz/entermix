@@ -5,8 +5,8 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="#">Fit Dance</a>
-      <a mat-list-item routerLink="#">Yoga</a>
+      <a mat-list-item routerLink="tutores">Fit Dance</a>
+      <a mat-list-item routerLink="tutores">Yoga</a>
       <a mat-list-item routerLink="tutores">Tutores</a>
       <a mat-list-item href="https://www.google.com/search?q=Aconselhamento+nutricional&oq=Aconselhamento+nutricional&aqs=chrome..69i57j0l7.876j0j9&sourceid=chrome&ie=UTF-8">Aconselhamento nutricional</a>
       <a mat-list-item href ="https://www.google.com/search?q=terapia&oq=terapia&aqs=chrome..69i57j0l7.1398j0j4&sourceid=chrome&ie=UTF-8">Terapia</a>
@@ -29,6 +29,9 @@
       <span>EnterMix</span>
     </mat-toolbar>
     <router-outlet></router-outlet>
+    <a routerLink="" mat-fab color="warn" aria-label="Example icon button with a home icon" class='botao'>
+      <mat-icon>home</mat-icon>
+    </a>
     <!-- Add Content Here -->
   </mat-sidenav-content>
 </mat-sidenav-container>
