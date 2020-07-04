@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Component } from '@angular/core';
+
+
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
@@ -18,7 +20,14 @@ import { from } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { core } from '@angular/compiler';
 import {MatMenuModule} from '@angular/material/menu';
+import { TutorCardComponent } from './tutor-card/tutor-card.component';
+import { TutorPageComponent } from './tutor-page/tutor-page.component';
+import {MatIconModule} from '@angular/material/icon';
+import {LOCALE_ID } from '@angular/core';
+import {registerLocaleData} from '@angular/common';
+import locatePT from '@angular/common/locales/pt'
 
+registerLocaleData(locatePT, 'pt-BR')
 
 @NgModule({
   declarations: [
@@ -27,6 +36,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MixcompComponent,
     MixCardComponent,
     MenuPageLayoutComponent,
+    TutorCardComponent,
+    TutorPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,9 +50,13 @@ import {MatMenuModule} from '@angular/material/menu';
     MatListModule,
     CommonModule,
     MatMenuModule,
+    MatIconModule,
+    HttpClientModule,
 
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID, useValue: 'pt-BR'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
